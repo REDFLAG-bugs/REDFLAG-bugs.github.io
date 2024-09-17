@@ -5,314 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Anshuman Mishra's Portfolio - Engineer, Machine Learning Enthusiast">
     <title>Anshuman Mishra | Portfolio</title>
-    
-    <!-- Google Fonts for professional and stylish typography -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <!-- Link to three.js for 3D graphics -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-    <!-- External CSS for layout and design -->
-    <style>
-        /* Reset and Basic Styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: linear-gradient(180deg, #1a1a1d, #3c3c44 60%, #f7f9fb);
-            color: #333;
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            font-size: 16px;
-            overflow-x: hidden;
-        }
-        header {
-            background: transparent;
-            color: #fff;
-            padding: 5rem 0;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        header h1 {
-            font-size: 4rem;
-            font-family: 'Montserrat', sans-serif;
-            margin-bottom: 1rem;
-        }
-        header p {
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-        nav {
-            text-align: center;
-            padding: 1rem 0;
-            z-index: 2;
-            position: relative;
-        }
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            color: #ff6347;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #fff;
-        }
-
-        /* Full-page Background Styling */
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 600px;
-            background: linear-gradient(180deg, #1a1a1d, #3c3c44);
-            z-index: 0;
-        }
-
-        /* Container and Section Styling */
-        .container {
-            width: 80%;
-            margin: 6rem auto;
-            max-width: 1200px;
-        }
-        section {
-            margin-bottom: 6rem;
-            padding: 3rem;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            position: relative;
-            z-index: 2;
-        }
-        section h2 {
-            font-size: 2.5rem;
-            font-family: 'Montserrat', sans-serif;
-            margin-bottom: 1.5rem;
-            color: #ff6347;
-            text-align: center;
-        }
-        section p, section ul {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        .skills ul, .experience ul {
-            list-style: none;
-            padding: 0;
-        }
-        .skills ul li, .experience ul li {
-            background: #ff6347;
-            color: white;
-            padding: 0.7rem 1.5rem;
-            margin-bottom: 0.7rem;
-            border-radius: 5px;
-            display: inline-block;
-            font-size: 1.2rem;
-            transition: all 0.3s ease-in-out;
-        }
-        .skills ul li:hover {
-            transform: scale(1.15);
-            transition: transform 0.2s;
-        }
-
-        /* Section Dividers */
-        .wave-divider {
-            position: relative;
-            background: linear-gradient(180deg, #3c3c44, #f7f9fb);
-            height: 150px;
-            z-index: 1;
-        }
-        .wave-divider::before {
-            content: '';
-            position: absolute;
-            top: -100px;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background: url('https://www.svgrepo.com/show/307977/wave-bottom.svg') no-repeat center top;
-            background-size: cover;
-        }
-
-        /* Footer Styling */
-        footer {
-            background: #1a1a1d;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            position: relative;
-            z-index: 2;
-            margin-top: 4rem;
-        }
-        footer p {
-            margin: 0;
-        }
-
-        /* 3D Graphic Section */
-        #canvas-container {
-            width: 100%;
-            height: 500px;
-            margin: 50px 0;
-            background-color: #e8f0f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        /* Smooth Scroll and Animation */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        section.fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        section.fade-in.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- Header -->
     <header>
         <h1>Anshuman Mishra</h1>
-        <p>Passionate Engineer | Machine Learning Enthusiast</p>
+        <h3>
+        <p>Writer | Machine Learning Enthusiast</p></h3>
         <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="book.html">Book</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Wave Divider -->
     <div class="wave-divider"></div>
 
-    <!-- Main Container -->
     <div class="container">
-        
-        <!-- 3D Graphic Section -->
-        <div id="canvas-container"></div>
-
-        <!-- About Section -->
-        <section id="about" class="fade-in">
+        <section id="about">
             <h2>About Me</h2>
-            <p>I am a passionate engineer with a focus on machine learning, data analysis, and model development. I enjoy solving real-world problems using technology and am constantly seeking opportunities for professional growth in this exciting field.</p>
+            <p>I am a passionate engineer with a focus on machine learning and data analysis. I love solving real-world problems using technology.</p>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="fade-in">
+        <section id="experience">
             <h2>Experience</h2>
             <ul>
-                <li><strong>AWS, Azure Masters - Apprenticeship (Jun 2024 – Jul 2024)</strong><br>Mentored students in troubleshooting, debugging, and provided hands-on workshops on AWS and Azure technologies.</li>
-                <li><strong>AI/ML Lead - GDSC Silicon Chapter (May 2023 – Dec 2023)</strong><br>Led workshops, and enhanced teaching and management skills while building connections with the AI/ML community.</li>
+                <li><strong>AWS, Azure Masters - Apprenticeship</strong></li>
+                <li><strong>AI/ML Lead - GDSC Silicon Chapter</strong></li>
             </ul>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="fade-in">
+        <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>C</li>
-                <li>MOJO</li>
-                <li>TensorFlow</li>
-                <li>PyTorch</li>
-                <li>YOLOv8</li>
-                <li>OpenCV</li>
-                <li>Git, Jupyter Labs</li>
-            </ul>
+        
+            <!-- Languages Section -->
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <!-- <div class="skill">
+    <h4>LanguageName</h4>
+    <div class="progress-bar">
+        <div class="progress" style="width: Percentage%;">Percentage%</div>
+    </div>
+</div> -->
+                <div class="skill">
+                    <h4>Python</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4>MOJO</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 20%;">20%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4>Rust</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 20%;">20%</div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Libraries Section -->
+            <div class="skill-category">
+                <h3>Libraries</h3>
+                <ul>
+                    <li>Numpy</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>Scikit-learn</li>
+                    <li>OpenCV</li>
+                    <li>Torchvision</li>
+                </ul>
+            </div>
+        
+            <!-- Frameworks Section -->
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>TensorFlow</li>
+                    <li>PyTorch</li>
+                </ul>
+            </div>
+        
+            <!-- Cloud and DevOps Section -->
+            <div class="skill-category">
+                <h3>Cloud and DevOps Tools</h3>
+                <ul>
+                    <li>AWS</li>
+                    <li>Azure</li>
+                    <li>Terraform</li>
+                    <li>Jenkins</li>
+                </ul>
+            </div>
         </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="fade-in">
-            <h2>Projects</h2>
-            <h3>Traffic Management System</h3>
-            <p>Developed a system for counting vehicles using camera data to improve traffic signal control and reduce latency. This project involved integrating sensors and utilizing machine learning techniques to optimize the process.</p>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="fade-in">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:anshumanmishra274@gmail.com">anshumanmishra274@gmail.com</a></p>
-            <p>Find me on: 
-                <a href="https://linkedin.com/in/iamanshumanmishra">LinkedIn</a> | 
-                <a href="https://github.com/REDFLAG-bugs">GitHub</a> | 
-                <a href="https://carl-writes.medium.com/">Blog</a>
-            </p>
-        </section>
+        
     </div>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Anshuman Mishra. All rights reserved.</p>
-    </footer>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Anshuman Mishra. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/iamanshumanmishra/" target="_blank">
+            <img src="https://simpleicons.org/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://x.com/ifound_24" target="_blank">
+            <img src="https://simpleicons.org/icons/x.svg" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://github.com/REDFLAG-bugs" target="_blank">
+            <img src="https://simpleicons.org/icons/github.svg" alt="GitHub" class="social-icon">
+        </a>
+    </div>
+</footer>
 
-    <!-- Three.js 3D Cube Script -->
-    <script>
-        // Setup scene, camera, and renderer
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 400, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
-        const container = document.getElementById('canvas-container');
-        renderer.setSize(container.offsetWidth, container.offsetHeight);
-        container.appendChild(renderer.domElement);
 
-        // Create a cube
-        const geometry = new THREE.BoxGeometry();
-        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
-        const cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
-
-        camera.position.z = 5;
-
-        // Animation loop
-        function animate() {
-            requestAnimationFrame(animate);
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-            renderer.render(scene, camera);
-        }
-        animate();
-
-        // Handle window resize
-        window.addEventListener('resize', function() {
-            const width = container.offsetWidth;
-            const height = container.offsetHeight;
-            renderer.setSize(width, height);
-            camera.aspect = width / height;
-            camera.updateProjectionMatrix();
-        });
-
-        // Scroll Animation for Fade-in Sections
-        const fadeInElements = document.querySelectorAll('.fade-in');
-        const options = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, options);
-
-        fadeInElements.forEach(element => {
-            observer.observe(element);
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

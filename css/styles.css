@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #2e2e1a, #a07373);
+    color: #db5b5b;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: transparent;
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 4rem auto;
+    max-width: 1200px;
+}
+
+section {
+    padding: 2rem;
+    background: #fff;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+}
+
+footer {
+    background: #1a1a1d;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    margin-top: 4rem;
+}
+
+footer {
+    background: #bd3c3c;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adjust spacing between icons */
+    margin-top: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+.social-links a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #ff6347; /* Subtle hover color for text */
+}
+
+.skill-category {
+    margin-bottom: 3rem;
+}
+
+.skill-category h3 {
+    font-size: 1.8rem;
+    color: #ff6347;
+    margin-bottom: 1.2rem;
+}
+
+.skill ul, .skill-category ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.skill ul li, .skill-category ul li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background: #ff6347;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+.skill {
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    height: 25px;
+}
+
+.progress {
+    background-color: #ff6347;
+    height:10;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    border-radius: 0.5px;
+}
