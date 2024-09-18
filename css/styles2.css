@@ -1,0 +1,112 @@
+/* Reset margins */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #fbf7f7;
+    color: #682e2e;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* Heading styling */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #ff6347;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Contact form styling */
+.contact-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Input and textarea styling */
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Focus effect */
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff6347;
+    box-shadow: 0 0 5px rgba(255, 99, 71, 0.3);
+}
+
+/* Submit button styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+button:hover {
+    background-color: #e5533b;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+/* Return to Home button styling */
+#return-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ff6347;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#return-home:hover {
+    background-color: #e5533b;
+}
